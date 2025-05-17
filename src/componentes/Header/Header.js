@@ -7,7 +7,9 @@ import {
 	BiSolidMoon,
 	BiSolidSun,
 } from "react-icons/bi";
+import CV from "../../assets/Krishna_devashish_resume.pdf";
 import { RiServiceLine } from "react-icons/ri";
+import { FaDownload } from "react-icons/fa";
 
 const Header = ({ currentNav, setCurrentNav }) => {
 	const [size, setSize] = useState([0, 0]);
@@ -115,45 +117,58 @@ const Header = ({ currentNav, setCurrentNav }) => {
 						</li>
 					</ul>
 				</nav>
-				<span
-					className={
-						"header__theme-switch" +
-						(currentTheme === "dark" ? " disabled" : " enabled")
-					}
-					onClick={() => {
-						if (currentTheme === "dark") {
-							document.body.classList.remove("dark");
-							document.body.classList.add("light");
-							setCurrentTheme("light");
-						} else {
-							document.body.classList.remove("light");
-							document.body.classList.add("dark");
-							setCurrentTheme("dark");
+				<div className="header__right-container">
+					<span
+						className={
+							"header__theme-switch" +
+							(currentTheme === "dark" ? " disabled" : " enabled")
 						}
-					}}
-				>
-					<span className='theme-switch-wrapper'>
-						<BiSolidMoon style={{ transform: "translate(-3px, -2px)" }} />
-						<BiSolidSun style={{ transform: "translate(3px, -2px)" }} />
+						onClick={() => {
+							if (currentTheme === "dark") {
+								document.body.classList.remove("dark");
+								document.body.classList.add("light");
+								setCurrentTheme("light");
+							} else {
+								document.body.classList.remove("light");
+								document.body.classList.add("dark");
+								setCurrentTheme("dark");
+							}
+						}}
+					>
+						<span className='theme-switch-wrapper'>
+							<BiSolidMoon style={{ transform: "translate(-3px, -2px)" }} />
+							<BiSolidSun style={{ transform: "translate(3px, -2px)" }} />
+						</span>
 					</span>
-				</span>
+					<a
+						download='Krishn_Devashish_Resume.pdf'
+						className='header__download-btn'
+						target='_blank'
+						rel='noreferrer'
+						href={CV}
+					>
+						<FaDownload />
+						Download resume
+					</a>
+				</div>
 			</>
 		);
 	};
 
 	return (
 		<header className='header'>
-			<span className='header__logo-container'>
-				<img src={image.Logo} height='24px' alt='Krishn' />
-			</span>
-			{size[0] > 720 ? (
-				navContainer()
-			) : (
-				<div className={"header__overlay" + (menuOpen ? " open" : "")}>
-					{navContainer()}
-				</div>
-			)}
-			<span
+			<div className="header__container">
+				<span className='header__logo-container'>
+					<img src={image.Logo} height='24px' alt='Krishn' />
+				</span>
+				{size[0] > 720 ? (
+					navContainer()
+				) : (
+					<div className={"header__overlay" + (menuOpen ? " open" : "")}>
+						{navContainer()}
+					</div>
+				)}
+				<span
 				className={"header__hamburger" + (menuOpen ? " open" : "")}
 				onClick={() => {
 					setMenuOpen(!menuOpen);
@@ -162,7 +177,8 @@ const Header = ({ currentNav, setCurrentNav }) => {
 				<span></span>
 				<span></span>
 				<span></span>
-			</span>
+				</span>
+			</div>
 		</header>
 	);
 };

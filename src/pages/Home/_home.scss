@@ -5,124 +5,131 @@
   align-items: center;
   background-color: var(--secondary-bg-color);
 
-  &> div {
-    position: relative;
+  &-wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 
-    &.home-container-left {
-      h2 {
-        font-size: 2rem;
-        margin: 0;
-        margin-bottom: 0.5rem;
-      }
-      h1 {
-        font-size: 3rem;
-        margin: 0;
-        margin-bottom: 0.5rem;
-        color: var( --support-color);
-      }
-      h4 {
-        font-size: 1rem;
-        margin: 0;
-        display: flex;
-        box-sizing: border-box;
-      }
-    }
-
-    .profile-container {
-      width: 18rem;
-      height: 18rem;
-      overflow: hidden;
-      border-radius: 50%;
-      // box-shadow: 2px 2px 20px #ccc;
-      padding: 0.35rem;
-      border: 0.25rem solid var( --support-color);
-      animation: profileAnimation 2s ease-in-out;
+    &> div {
       position: relative;
-      background-color: var(--bg-color);
 
-      &-img {
-        width: 100%;
-        margin-top: 2rem;
-        margin-left: 2rem;
+      &.home-container-left {
+        h2 {
+          font-size: 2rem;
+          margin: 0;
+          margin-bottom: 0.5rem;
+        }
+        h1 {
+          font-size: 3rem;
+          margin: 0;
+          margin-bottom: 0.5rem;
+          color: var( --support-color);
+        }
+        h4 {
+          font-size: 1rem;
+          margin: 0;
+          display: flex;
+          box-sizing: border-box;
+        }
       }
-    }
 
-    .profile-skills {
-      width: 18rem;
-      height: 18rem;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      
-      &-item {
-        display: inline-block;
-        width: 3.5rem;
-        height: 3.5rem;
-        position: absolute;
+      .profile-container {
+        width: 18rem;
+        height: 18rem;
+        overflow: hidden;
+        border-radius: 50%;
         // box-shadow: 2px 2px 20px #ccc;
         padding: 0.35rem;
         border: 0.25rem solid var( --support-color);
+        animation: profileAnimation 2s ease-in-out;
+        position: relative;
         background-color: var(--bg-color);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        transition: 0.5s cubic-bezier(0, 0.53, 0.73, 1.21);
+
+        &-img {
+          width: 100%;
+          margin-top: 2rem;
+          margin-left: 2rem;
+        }
+      }
+      .profile-skills {
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
         top: 50%;
-        right: -2rem;
-
-        img {
-          width: 70%;
-          height: 70%;
-          object-fit: contain;
-        }
-
-        &:nth-child(1) {
-          top: -4rem;
-          right: -3rem;
-          height: 5rem;
-          width: 5rem;
-          animation: showBubble1 2s ease-in-out;
-        }
-
-        &:nth-child(2) {
-          top: 2.5rem;
-          right: -4.5rem;
-          height: 4rem;
-          width: 4rem;
-          animation: showBubble2 2s ease-in-out;
+        transform: translateY(-50%);
+        
+        &-item {
+          display: inline-block;
+          width: 3.5rem;
+          height: 3.5rem;
+          position: absolute;
+          // box-shadow: 2px 2px 20px #ccc;
+          padding: 0.35rem;
+          border: 0.25rem solid var( --support-color);
+          background-color: var(--bg-color);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          transition: 0.5s cubic-bezier(0, 0.53, 0.73, 1.21);
+          top: 50%;
+          right: -2rem;
 
           img {
-            height: 60%;
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
           }
-        }
 
-        &:nth-child(3) {
-          top: 7.5rem;
-          right: -4.5rem;
-          animation: showBubble3 2s ease-in-out;
-
-          img {
-            height: 60%;
+          &:nth-child(1) {
+            top: -4rem;
+            right: -3rem;
+            height: 5rem;
+            width: 5rem;
+            animation: showBubble1 2s ease-in-out;
           }
-        }
 
-        &:nth-child(4) {
-          top: 12rem;
-          right: -3.5rem;
-          animation: showBubble4 2s ease-in-out;
-        }
+          &:nth-child(2) {
+            top: 2.5rem;
+            right: -4.5rem;
+            height: 4rem;
+            width: 4rem;
+            animation: showBubble2 2s ease-in-out;
 
-        &:nth-child(5) {
-          top: 16rem;
-          right: -1rem;
-          animation: showBubble5 2s ease-in-out;
+            img {
+              height: 60%;
+            }
+          }
+
+          &:nth-child(3) {
+            top: 7.5rem;
+            right: -4.5rem;
+            animation: showBubble3 2s ease-in-out;
+
+            img {
+              height: 60%;
+            }
+          }
+
+          &:nth-child(4) {
+            top: 12rem;
+            right: -3.5rem;
+            animation: showBubble4 2s ease-in-out;
+          }
+
+          &:nth-child(5) {
+            top: 16rem;
+            right: -1rem;
+            animation: showBubble5 2s ease-in-out;
+          }
         }
       }
     }
   }
-
 }
 
 @keyframes profileAnimation {
@@ -251,7 +258,7 @@
 
 @media screen and (max-width: $mdWidth) {
 
-  .home-container {
+  .home-container, .home-container-wrapper {
     flex-direction: column;
     justify-content: center;
     gap: 7.5rem;

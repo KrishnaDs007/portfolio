@@ -21,18 +21,20 @@ $lgWidth: 1200px;
   --light-hover-color: #159e9e99;
   --shadow-out-color: #000000aa;
   --shadow-in-color: #2c2c2caa;
+  --header-shadow-color: #000000;
   --transition: all 0.3s ease-in-out;
   
   scroll-behavior: smooth;
 }
 
 body.light {
-  --bg-color: #f6f9ff;
+  --bg-color: #fff;
   --text-color: #0d2f45;
-  --secondary-bg-color: #d1e9fa;
+  --secondary-bg-color: #eff8ff;
   --support-color: #1da8ff;
-  --dark-hover-color: #acc1ce99;
+  --dark-hover-color: #c9eaff99;
   --light-hover-color: #2be3e399;
   --shadow-out-color: #424242aa;
   --shadow-in-color: #828282aa;
+  --header-shadow-color: #d4d4d4;
 }

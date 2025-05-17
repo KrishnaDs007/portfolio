@@ -8,6 +8,8 @@
       display: flex;
       align-items: center;
       position: relative;
+      max-width: 70rem;
+      margin: 0 auto;
 
       &__btns {
         background: linear-gradient(to left, var(--dark-hover-color), transparent);

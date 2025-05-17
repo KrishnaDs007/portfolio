@@ -11,6 +11,17 @@
   background-image: url('../../assets/img/bgSvg.svg');
   background-color: var(--secondary-bg-color);
   background-blend-mode: soft-light;
+  box-shadow: 0px 5px 10px var(--header-shadow-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
 
   &__logo-container {
     img {
@@ -65,6 +76,31 @@
           }
         }
       }
+    }
+  }
+
+  &__right-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__download-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.65rem 0.875rem;
+    border: 0.25rem solid var( --support-color);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    align-items: center;
+    transform: scale(1);
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.025);
     }
   }
 
@@ -174,6 +210,11 @@
 
 @media screen and (max-width: $mdWidth) {
   .header {
+
+    &__right-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
     &__nav, &__theme-switch  {
       // display: none;
     }

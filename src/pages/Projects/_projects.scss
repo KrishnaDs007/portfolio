@@ -7,6 +7,8 @@
 
     .projects-wrapper {
       margin-top: 1rem;
+      max-width: 70rem;
+      margin: 0 auto;
 
       &__content {
         display: flex;

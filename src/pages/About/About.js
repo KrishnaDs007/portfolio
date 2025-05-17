@@ -28,14 +28,21 @@ const About = () => {
 					<FaLinkedin />
 				</div>
 				<p className='about-container__details-basic'>
-					Experienced and motivated Software Engineer with a passion for
-					front-end development, user experience, and problem-solving. I thrive
-					in dynamic environments, leveraging my skills and expertise to create
-					innovative solutions that enhance user engagement and drive business
-					growth. With a solid foundation in Computer Science and extensive
-					hands-on experience, I have honed my abilities to deliver high-quality
-					code, collaborate effectively in cross-functional teams, and meet
-					project objectives within demanding deadlines.
+					I am Krishna Devashish, a Senior Software Developer specializing in UI/Frontend Development with over 6 years of experience in building scalable, high-performance web applications. My expertise lies in JavaScript, React, Redux, Webpack, jQuery, HTML, CSS, SCSS, and Bootstrap, with a strong focus on creating seamless, user-friendly interfaces.
+					<br/>
+					As a team leader and problem solver, I have successfully led UI teams, architected micro-frontend solutions, and optimized applications for better performance and scalability. I am passionate about writing clean, maintainable code, improving development workflows, and staying ahead with the latest frontend technologies.
+					<br/>
+					<br/>
+					<b>What I Do</b>:
+					<br/>
+					✅ <b>Frontend Architecture</b> – Designing scalable UI solutions with modern frameworks.<br/>
+					✅ <b>Performance Optimization</b> – Enhancing app efficiency with Webpack, caching strategies, and best coding practices.<br/>
+					✅ <b>UI/UX Development</b> – Creating engaging user experiences with responsive, pixel-perfect designs.<br/>
+					✅ <b>Team Leadership</b> – Mentoring developers and ensuring best practices in frontend development.<br/>
+					✅ <b>Data Visualization</b> – Implementing dashboards and analytics using React-ChartJS2 and other libraries.<br/>
+					<br/>
+					<br/>
+					With a track record of delivering high-quality, fast, and interactive web applications, I am always looking to innovate and push the boundaries of frontend development.
 				</p>
 				<a
 					download='Krishn_Devashish_Resume.pdf'
